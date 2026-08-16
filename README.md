@@ -23,16 +23,38 @@
 ```mermaid
 erDiagram
     users {
-        ○○○○○
-        ○○○○○
+        bigint id PK
+        string name
+        string email UK
+        timestamp email_verified_at
+        string password
+        string remember_token
+        timestamp created_at
+        timestamp updated_at
     }
 
-    ○○○○○ {
-        ○○○○○
-        ○○○○○
+    categories {
+        bigint id PK
+        string name
+        timestamp created_at
+        timestamp updated_at
     }
 
-    ○○○○○ ||--o{ ○○○○○ : "has many"
+    tasks {
+        bigint id PK
+        bigint user_id FK
+        bigint category_id FK
+        string title
+        text description
+        tinyint priority
+        timestamp created_at
+        timestamp updated_at
+
+    }
+
+
+   users ||--o{ tasks : "has many"
+    categories ||--o{ tasks : "has many"
 ```
 
 ## 開発環境URL
