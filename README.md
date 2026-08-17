@@ -117,7 +117,7 @@ $ sail artisan key:generate
 データベースのテーブルを作成
 
 ```bash
-    $ sail artisan migrate
+$ sail artisan migrate
 ```
 
 7. **フロントエンドのビルド**
@@ -131,13 +131,13 @@ $ sail npm install
 Tailwind CSS、PostCSS、Autoprefixerをインストール
 
 ```bash
-    $ sail npm install -D tailwindcss@^3.4.0 postcss autoprefixer
+$ sail npm install -D tailwindcss@^3.4.0 postcss autoprefixer
 ```
 
 開発中はVite開発サーバーを起動したままにしておく（ターミナルを新規で開く）
 
 ```bash
-   $ sail npm run dev
+$ sail npm run dev
 ```
 
 8. **アプリケーションへのアクセス**
