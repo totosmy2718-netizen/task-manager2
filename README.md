@@ -73,7 +73,7 @@ Laravel Sailを使用してLaravel、MySQLなどの開発環境を構築して�
 1. **リポジトリをクローン**
 
 ```bash
-$ git clone https://○○○○○○
+$ git clone https://github.com/totosmy2718-netizen/task-manager2
 ```
 
 2. **.envファイルの準備**
@@ -98,15 +98,15 @@ $ docker run --rm \
 
 4. **Laravel Sailの起動**
 
-    Docker Desktopを起動した状態で、Laravel Sailを起動
+Docker Desktopを起動した状態で、Laravel Sailを起動
 
 ```bash
-$ sail up -d
+$ ./vendor/bin/sail up -d
 ```
 
 5. **アプリケーションキーの生成**
 
-    Laravelのアプリケーションキーを生成
+Laravelのアプリケーションキーを生成
 
 ```bash
 $ sail artisan key:generate
@@ -143,7 +143,7 @@ $ sail npm run dev
 8. **アプリケーションへのアクセス**
 
 ブラウザで以下のURLにアクセス
-　　http://localhost
+http://localhost
 
 ## テスト実行
 
